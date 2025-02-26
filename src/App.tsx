@@ -13,6 +13,16 @@ let array2: Array<boolean> = [true, false, true];
 let array3: (string | number)[] = [0, 1, "hello"];
 let array4: Array<string | number> = [0, 1, "hello"];
 
+interface NameType {
+  first: string;
+  last: string;
+}
+
+let nameObj: NameType = {
+  first: "Yamada",
+  last: "Taro",
+};
+
 function App() {
   return (
     <>
