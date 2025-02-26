@@ -7,6 +7,9 @@ let username: string = "Hello";
 let dymmyNum: number = 2;
 let bool: boolean = true;
 
+let array1: boolean[] = [true, false, true];
+let array2: Array<boolean> = [true, false, true];
+
 function App() {
   return (
     <>
