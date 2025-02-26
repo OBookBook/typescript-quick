@@ -16,6 +16,14 @@ let array4: Array<string | number> = [0, 1, "hello"];
 let nullValue: null = null;
 let undefinedValue: undefined = undefined;
 
+let obj: {
+  name: string;
+  age: number;
+} = {
+  name: "John",
+  age: 20,
+};
+
 interface NameType {
   first: string;
   last: string;
