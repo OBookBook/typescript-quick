@@ -81,6 +81,14 @@ msg2 = "Hello";
 let animal = { cat: "small cat" };
 let newAnimal: typeof animal = { cat: "big cat" };
 
+// keyof (オブジェクトのキーを取得)
+type KEYS = {
+  primary: string;
+  secondary: string;
+};
+let key: keyof KEYS;
+key = "primary";
+
 function App() {
   return (
     <>
