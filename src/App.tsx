@@ -27,6 +27,7 @@ let obj: {
 interface NameType {
   first: string;
   last: string;
+  age?: number;
 }
 
 let nameObj: NameType = {
