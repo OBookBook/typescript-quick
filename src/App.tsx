@@ -61,6 +61,11 @@ const userA: USER = {
   password: "xxx",
 };
 
+// Union Types （和集合型）複数の型のいずれかを持つ
+let valueUnion: boolean | number;
+valueUnion = true;
+valueUnion = 10;
+
 function App() {
   return (
     <>
