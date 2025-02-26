@@ -35,6 +35,10 @@ let nameObj: NameType = {
   last: "Taro",
 };
 
+const func1 = (x: number, y: number): number => {
+  return x + y;
+};
+
 function App() {
   return (
     <>
