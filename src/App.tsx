@@ -14,6 +14,7 @@ let array3: (string | number)[] = [0, 1, "hello"];
 let array4: Array<string | number> = [0, 1, "hello"];
 
 let nullValue: null = null;
+let undefinedValue: undefined = undefined;
 
 interface NameType {
   first: string;
