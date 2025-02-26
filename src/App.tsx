@@ -66,6 +66,13 @@ let valueUnion: boolean | number;
 valueUnion = true;
 valueUnion = 10;
 
+// Literal Types （リテラル型）
+let company: "Facebook" | "Google" | "Amazon";
+company = "Facebook";
+
+let memory: 256 | 512;
+memory = 256;
+
 function App() {
   return (
     <>
