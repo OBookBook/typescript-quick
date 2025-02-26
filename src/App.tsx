@@ -10,6 +10,9 @@ let bool: boolean = true;
 let array1: boolean[] = [true, false, true];
 let array2: Array<boolean> = [true, false, true];
 
+let array3: (string | number)[] = [0, 1, "hello"];
+let array4: Array<string | number> = [0, 1, "hello"];
+
 function App() {
   return (
     <>
