@@ -73,6 +73,14 @@ company = "Facebook";
 let memory: 256 | 512;
 memory = 256;
 
+// typeof (型抽出)
+let msg: string = "Hi";
+let msg2: typeof msg;
+msg2 = "Hello";
+
+let animal = { cat: "small cat" };
+let newAnimal: typeof animal = { cat: "big cat" };
+
 function App() {
   return (
     <>
