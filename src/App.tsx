@@ -5,6 +5,7 @@ const name: string = "naobe";
 
 let username: string = "Hello";
 let dymmyNum: number = 2;
+let bool: boolean = true;
 
 function App() {
   return (
