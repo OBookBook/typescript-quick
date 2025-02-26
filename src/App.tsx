@@ -35,6 +35,10 @@ let nameObj: NameType = {
   last: "Taro",
 };
 
+let func: (name: string) => void = (name: string) => {
+  console.log(name);
+};
+
 const func1 = (x: number, y: number): number => {
   return x + y;
 };
