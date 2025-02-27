@@ -137,6 +137,12 @@ interface GEN2<T extends string | number> {
 const gen4: GEN2<string> = { item: "hello" };
 const gen5: GEN2<number> = { item: 10 };
 
+function funcGen<T>(props: T) {
+  return { item: props };
+}
+const gen6 = funcGen<string>("test");
+const gen7 = funcGen<string | null>(null);
+
 function App() {
   return (
     <>
