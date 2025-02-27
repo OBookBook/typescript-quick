@@ -148,6 +148,14 @@ function fungGen1<T extends string | null>(props: T) {
 }
 const gen8 = fungGen1<string>("hello");
 
+interface Props {
+  price: number;
+}
+function funcGen3<T extends Props>(props: T) {
+  return { value: props.price };
+}
+const gen10 = funcGen3({ price: 10000 });
+
 function App() {
   return (
     <>
