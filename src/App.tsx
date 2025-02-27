@@ -143,6 +143,11 @@ function funcGen<T>(props: T) {
 const gen6 = funcGen<string>("test");
 const gen7 = funcGen<string | null>(null);
 
+function fungGen1<T extends string | null>(props: T) {
+  return { value: props };
+}
+const gen8 = fungGen1<string>("hello");
+
 function App() {
   return (
     <>
