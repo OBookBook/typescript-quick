@@ -20,10 +20,18 @@ const TestComponent: React.FC<Props> = (props) => {
     name: "John",
   });
 
+  // Event Handler type
+  const [inputData, setInputData] = useState("");
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) =>
+    setInputData(e.target.value);
+
   return (
     <>
       <div>{props.text}</div>
       <div>{count}</div>
+
+      <input type="text" value={inputData} onChange={handleChange} />
+      <h2>{inputData}</h2>
     </>
   );
 };
