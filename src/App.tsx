@@ -1,4 +1,5 @@
 import "./App.css";
+import TestComponent from "./components/TestComponent";
 import Data from "./data.json";
 
 // TypeScript データ型 型推論のため、不用だが、明示的につけることをannotation(アノーテーション)という
@@ -165,14 +166,16 @@ const gen11 = funcGen4({ price: 10000 });
 // JSON 型推論
 type USERS = typeof Data;
 
-function App() {
+const App: React.FC = () => {
   return (
     <>
       <div>
         <h1>{name}</h1>
+        {/* React Hooks Props 型 */}
+        <TestComponent text="hello from App" />
       </div>
     </>
   );
-}
+};
 
 export default App;
