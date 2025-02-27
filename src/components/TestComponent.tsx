@@ -1,9 +1,24 @@
+import { useState } from "react";
+
 interface Props {
   text: string;
 }
 
+// React Hooks useState type
+interface UserData {
+  id: number;
+  name: string;
+}
+
 const TestComponent: React.FC<Props> = (props) => {
-  return <div>{props.text}</div>;
+  const [count, setCount] = useState<number | null>(0);
+
+  return (
+    <>
+      <div>{props.text}</div>
+      <div>{count}</div>
+    </>
+  );
 };
 
 export default TestComponent;
