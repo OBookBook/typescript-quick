@@ -156,6 +156,11 @@ function funcGen3<T extends Props>(props: T) {
 }
 const gen10 = funcGen3({ price: 10000 });
 
+const funcGen4 = <T extends Props>(props: T) => {
+  return { value: props.price };
+};
+const gen11 = funcGen4({ price: 10000 });
+
 function App() {
   return (
     <>
