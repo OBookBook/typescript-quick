@@ -116,6 +116,27 @@ const PC2: PC = {
   OSType: OS.Mac,
 };
 
+// Generics(ジェネリックス)
+interface GEN<T> {
+  item: T;
+}
+const gen0: GEN<string> = {
+  item: "hello",
+};
+const gen2: GEN<number> = { item: 10 };
+
+interface GEN1<T = string> {
+  item: T;
+}
+const gen3: GEN1 = { item: "hello" };
+
+// Tがstringかnumberのどちらかであることを保証する
+interface GEN2<T extends string | number> {
+  item: T;
+}
+const gen4: GEN2<string> = { item: "hello" };
+const gen5: GEN2<number> = { item: 10 };
+
 function App() {
   return (
     <>
