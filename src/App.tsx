@@ -1,6 +1,6 @@
 import "./App.css";
-import TestComponent from "./components/TestComponent";
 import Data from "./data.json";
+import TestComponent from "./components/TestComponent";
 
 // TypeScript データ型 型推論のため、不用だが、明示的につけることをannotation(アノーテーション)という
 const name: string = "naobe";
@@ -157,11 +157,6 @@ function funcGen3<T extends Props>(props: T) {
   return { value: props.price };
 }
 const gen10 = funcGen3({ price: 10000 });
-
-const funcGen4 = <T extends Props>(props: T) => {
-  return { value: props.price };
-};
-const gen11 = funcGen4({ price: 10000 });
 
 // JSON 型推論
 type USERS = typeof Data;
